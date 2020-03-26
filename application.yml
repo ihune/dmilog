@@ -52,7 +52,11 @@ jhipster:
  cache:
   ehcache:
    time-to-live-seconds: 1
-   
+  
+zuul:
+  ribbon:
+    eager-load:
+      enabled: true
 #spring:
 #  datasource:
 #    type: com.zaxxer.hikari.HikariDataSource
