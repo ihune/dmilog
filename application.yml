@@ -62,6 +62,7 @@ ribbon:
     enabled: true
   MaxAutoRetries: 3
   ReadTimeout: 60000
+
 zuul: # those values must be configured depending on the application specific needs
   sensitive-headers: Cookie,Set-Cookie #see https://github.com/spring-cloud/spring-cloud-netflix/issues/3126
   host:
