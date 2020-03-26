@@ -2,11 +2,6 @@
 configserver:
     name: Docker JHipster Registry
     status: Connected to the JHipster Registry running in Docker
-
-#jhipster:
-#    registry:
-#        password: admin
-
     security:
         authentication:
             jwt:
@@ -52,6 +47,12 @@ postgres:
     hikari:
       poolName: Hikari
       auto-commit: false
+
+jhipster:
+ cache:
+  ehcache:
+   time-to-live-seconds: 1
+   
 #spring:
 #  datasource:
 #    type: com.zaxxer.hikari.HikariDataSource
@@ -69,8 +70,8 @@ postgres:
 #    elasticsearch:
 #      rest:
 #        uris: http://10.10.252.128:9200
-jhipster:
- cache:
-  ehcache:
-   time-to-live-seconds: 1
 
+
+#jhipster:
+#    registry:
+#        password: admin
