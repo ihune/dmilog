@@ -68,3 +68,4 @@ postgres:
 #      rest:
 #        uris: http://10.10.252.128:9200
 jhipster.cache.ehcache.time-to-live-seconds: 1
+eureka.server.peer-node-read-timeout-ms: 10000
