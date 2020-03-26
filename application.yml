@@ -4,6 +4,9 @@ configserver:
     status: Connected to the JHipster Registry running in Docker
 
 jhipster:
+    registry:
+        password: admin
+
     security:
         authentication:
             jwt:
