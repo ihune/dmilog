@@ -58,6 +58,7 @@ ribbon:
     enabled: true
   MaxAutoRetries: 3
   ReadTimeout: 60000
+  ConnectTimeout: 5000
 
 zuul: # those values must be configured depending on the application specific needs
   ribbon:
