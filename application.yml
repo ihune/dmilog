@@ -16,7 +16,9 @@ eureka:
     client:
         service-url:
             defaultZone: http://admin:admin@10.10.252.146:8761/eureka/
-
+    server:
+        peer-node-read-timeout-ms: 10000
+  
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
@@ -72,6 +74,3 @@ jhipster:
   ehcache:
    time-to-live-seconds: 1
 
-eureka:
- server:
-  peer-node-read-timeout-ms: 10000
