@@ -80,8 +80,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 800000    
-  
+            timeoutInMilliseconds: 800000
 #spring:
 #  datasource:
 #    type: com.zaxxer.hikari.HikariDataSource
