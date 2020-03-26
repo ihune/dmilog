@@ -8,6 +8,9 @@ jhipster:
         authentication:
             jwt:
                 secret: my-secret-key-which-should-be-changed-in-production-and-be-base64-encoded
+    cache:
+        ehcache:
+            time-to-live-seconds: 1
 
 eureka:
     client:
@@ -49,11 +52,6 @@ postgres:
     hikari:
       poolName: Hikari
       auto-commit: false
-
-jhipster:
- cache:
-  ehcache:
-   time-to-live-seconds: 1
   
 zuul:
   ribbon:
